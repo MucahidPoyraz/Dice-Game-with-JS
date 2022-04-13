@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <section>
-            <h2>1. Player</h2>
-            <p>0</p>
-            <div>
-                <p>Dice</p>
-                <p>0</p>
+        <section class="player player--0 player--active">
+            <h2 class="name">1. Player</h2>
+            <p class="score">0</p>
+            <div class="current">
+                <p class="current-label">Dice</p>
+                <p class="current-score">0</p>
             </div>
         </section>
-        <section>
-            <h2>2. Player</h2>
-            <p>0</p>
-            <div>
-                <p>Dice</p>
-                <p>0</p>
+        <section class="player player--1">
+            <h2 class="name">2. Player</h2>
+            <p class="score">0</p>
+            <div class="current">
+                <p class="current-label">Dice</p>
+                <p class="current-score">0</p>
             </div>
         </section>
-        <img src="" alt="">
-        <button>New Game</button>
-        <button>Roll</button>
-        <button>Hold</button>
+        <img src="dice-6.png" alt="" class="dice">
+        <button class="btn btn--new">New Game</button>
+        <button class="btn btn--roll">Roll</button>
+        <button class="btn btn--hold">Hold</button>
     </main>
 </body>
 </html>
