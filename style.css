@@ -1,7 +1,8 @@
-html{
+html {
     font-size: 62.5%;
 }
-body{
+
+body {
     font-family: sans-serif;
     font-weight: 400;
     height: 100vh;
@@ -13,7 +14,7 @@ body{
 }
 
 /* Layout */
-main{
+main {
     position: relative;
     width: 100rem;
     height: 60rem;
@@ -25,7 +26,8 @@ main{
     overflow: hidden;
     display: flex;
 }
-.player{
+
+.player {
     flex: 50%;
     padding: 9rem;
     display: flex;
@@ -35,7 +37,7 @@ main{
 }
 
 /* Elements */
-.name{
+.name {
     position: relative;
     font-size: 4rem;
     text-transform: uppercase;
@@ -44,25 +46,31 @@ main{
     font-weight: 300;
     margin-bottom: 1rem;
 }
-.score{
+
+.score {
     font-size: 8rem;
     font-weight: 300;
     color: #c7365f;
     margin-bottom: auto;
 }
-.player--active{
+
+.player--active {
     background-color: rgba(255, 255, 255, 0.4);
 }
-.player--active .name{
+
+.player--active .name {
     font-weight: 700;
 }
-.player--active .score{
+
+.player--active .score {
     font-weight: 400;
 }
-.player--active .current{
+
+.player--active .current {
     opacity: 1;
 }
-.current{
+
+.current {
     background-color: #c7365f;
     opacity: 0.8;
     border-radius: 9px;
@@ -72,18 +80,20 @@ main{
     text-align: center;
     transition: all 0.75s;
 }
-.current-label{
+
+.current-label {
     text-transform: uppercase;
     margin-bottom: 1rem;
     font-size: 1.7rem;
     color: #ddd;
 }
-.current-score{
+
+.current-score {
     font-size: 3.5rem;
 }
 
 /* Absolute Positioned Elements */
-.btn{
+.btn {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -102,29 +112,35 @@ main{
     padding: 0.7rem 2.5rem;
     border-radius: 50rem;
     box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
-} 
-.btn::first-letter{
+}
+
+.btn::first-letter {
     font-size: 2.4rem;
     display: inline-block;
     margin-right: 0.7rem;
 }
-.btn--new{
+
+.btn--new {
     top: 4rem;
 }
+
 .btn--roll {
     top: 39.3rem;
 }
+
 .btn--hold {
     top: 46.1rem;
 }
-.btn:active{
-    transform: translate(50%,3px);
+
+/*.btn:active{
+    transform: translate(30%,3px);
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
-}
-.btn:focus{
+}*/
+.btn:focus {
     outline: none;
 }
-.dice{
+
+.dice {
     position: absolute;
     left: 50%;
     top: 16.5rem;
@@ -132,13 +148,16 @@ main{
     height: 10rem;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
 }
-.player--winner{
+
+.player--winner {
     background-color: #2f2f2f;
 }
-.player--winner .name{
+
+.player--winner .name {
     font-weight: 700;
     color: #c7365f;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
